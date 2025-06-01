@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="153dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Student Avatar"
+        android:src="@drawable/avatars_student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/student_name_edit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <EditText
+        android:id="@+id/student_id_edit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="ID"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/student_name_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <EditText
+        android:id="@+id/student_phone_edit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/student_id_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <EditText
+        android:id="@+id/address_student_edit"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/student_phone_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Checked"
+        app:layout_constraintTop_toBottomOf="@id/address_student_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp" />
+
+    <Button
+        android:id="@+id/cancel_e_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cancel"
+        app:backgroundTint="#EB8CAE"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete_e_button" />
+
+    <Button
+        android:id="@+id/delete_e_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Delete"
+        app:backgroundTint="#EB8CAE"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_edit"
+        app:layout_constraintStart_toEndOf="@id/cancel_e_button"
+        app:layout_constraintEnd_toStartOf="@id/save_e_button" />
+
+    <Button
+        android:id="@+id/save_e_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Save"
+        app:backgroundTint="#EB8CAE"
+        app:layout_constraintTop_toBottomOf="@id/checkBox_edit"
+        app:layout_constraintStart_toEndOf="@id/delete_e_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

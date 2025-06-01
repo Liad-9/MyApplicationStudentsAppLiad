@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/student_avatar_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Student Avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatars_student"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/student_name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/student_avatar_image"
+        app:layout_constraintTop_toTopOf="@id/student_avatar_image"
+        app:layout_constraintEnd_toStartOf="@id/student_checkbox"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/student_id_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="ID:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/student_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/student_name_text"
+        app:layout_constraintTop_toBottomOf="@id/student_name_text" />
+
+    <CheckBox
+        android:id="@+id/student_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/student_avatar_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/student_avatar_image"
+        app:layout_constraintVertical_bias="0.23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
