@@ -1,7 +1,7 @@
 ## Students Management App
 Android application built with Kotlin for managing student records.
 
-The app demonstrates multi-screen navigation using Activities and Fragments, dynamic list rendering with RecyclerView, and full CRUD operations using an in-memory data model.
+The app demonstrates single-activity architecture with Fragment-based navigation, dynamic list rendering using RecyclerView, and full CRUD operations with an in-memory data model.
 
 ## Features
 - Display students list using RecyclerView
@@ -19,13 +19,12 @@ The app demonstrates multi-screen navigation using Activities and Fragments, dyn
 - Android SDK
 - ConstraintLayout
 - RecyclerView
-- Activity
 - Fragments
 - Intents
 
 ## Application Structure
-- Students List screen
-- Add Student screen
-- Student Details screen
-- Edit Student screen
+- Students List Fragment
+- Add Student Fragment
+- Student Details Fragment
+- Edit Student Fragment
 
