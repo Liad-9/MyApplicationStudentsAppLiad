@@ -17,8 +17,15 @@ This app demonstrates CRUD operations, multi-screen navigation, and dynamic list
 ## Technologies Used
 - Kotlin
 - Android SDK
-- Activities
+- Activity
 - Fragments
 - RecyclerView
 - Intents
 - In-memory data model
+
+## Screens
+- Students List
+- Add New Student
+- Student Details
+- Edit Student
+
